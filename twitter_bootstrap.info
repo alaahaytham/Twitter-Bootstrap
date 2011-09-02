@@ -1,0 +1,68 @@
+name        = Bootstrap
+description = Provides the bootstrap framework (from Twitter).
+core        = 7.x
+engine      = phptemplate
+project = "Themes"
+
+; Screenshot
+screenshot = screenshot.png
+
+; Stylesheets
+stylesheets[all][] = stylesheets/css/framework.css
+
+; Regions
+regions[topbar] = Topbar
+regions[header] = Header
+regions[hero] = Hero
+regions[spotlight] = Spotlight
+regions[spotlight_autosize] = Spotlight Auto Size
+regions[page_header] = Page Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[content_header] = Content Header
+regions[content_footer] = Content Footer
+regions[sidebar_first] = Sidebar One
+regions[sidebar_first_header] = Sidebar One Header
+regions[sidebar_first_footer] = Sidebar One Footer
+regions[sidebar_second] = Sidebar Two
+regions[sidebar_second_header] = Sidebar Two Header
+regions[sidebar_second_footer] = Sidebar Two Footer
+regions[page_footer] = Page Footer
+regions[footer_spotlight] = Footer Spotlight
+regions[footer_spotlight_autosize] = Footer Spotlight Auto Size
+regions[footer_hero] = Footer Hero
+regions[footer] = Footer
+regions[footer_menu] = Footer Menu
+
+; Features
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; Settings
+settings[local_html5shim] = 0
+
+settings[skip_navigation] = 1
+
+settings[hide_logo] = 0
+settings[link_logo] = 1
+settings[topbar_logo] = 0
+settings[header_logo] = 1
+
+settings[hide_site_name] = 0
+settings[link_site_name] = 1
+settings[topbar_site_name] = 1
+settings[header_site_name] = 0
+
+; Grid Settings
+settings[grid_columns] = 16
+settings[column_width] = 40
+settings[gutter_width] = 20
+
+; See http://markdotto.com/bootstrap/

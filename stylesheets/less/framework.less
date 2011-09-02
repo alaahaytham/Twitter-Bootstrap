@@ -1,0 +1,75 @@
+@import "../../bootstrap/current/lib/bootstrap.less";
+
+.topbar {
+  /* Prevents the topbar from colliding with the toolbar module */
+  position: static;
+}
+
+.topbar,
+#wrapper-header,
+#wrapper-hero,
+#wrapper-spotlight,
+#wrapper-spotlight-autosize,
+  #wrapper-page-header,
+#wrapper-page,
+#wrapper-footer-spotlight-autosize,
+#wrapper-footer-spotlight,
+#wrapper-footer-hero,
+#wrapper-page-footer,
+#wrapper-footer
+{
+  .clearfix();
+}
+
+.wrapper-sidebar,
+.wrapper-content
+{
+  display: inline;
+  float: left;
+  .clearfix();
+}
+
+.no-sidebars .wrapper-content {
+  .columns(@gridColumns);
+}
+
+.one-sidebar .wrapper-sidebar {
+  .columns(4);
+}
+
+.one-sidebar .wrapper-content {
+  .columns(12);
+}
+
+.sidebar-first .wrapper-content {
+  margin-left: @gridGutterWidth;
+}
+
+.sidebar-second .wrapper-content {
+  margin-right: @gridGutterWidth;
+}
+
+.two-sidebars .wrapper-content {
+  /*
+  .columns(9);
+  margin-left: @gridGutterWidth;
+  margin-right: @gridGutterWidth;
+  */
+  width: 575px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.two-sidebars .wrapper-sidebar {
+  .columns(4);
+}
+
+.two-sidebars #wrapper-sidebar-first {
+  width: 190px;
+  /*.columns(3);*/
+}
+
+.two-sidebars #wrapper-sidebar-second {
+  width: 155px;
+  /*.columns(3);*/
+}
